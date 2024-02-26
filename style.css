@@ -1,0 +1,94 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden ;
+
+}
+
+button{
+    padding: 5px;
+    border-radius: 50px;
+    height: 65px;
+    margin: 6px;
+    font-size: 1.2em;
+    border-style: none;
+    background-color: rgb(255, 0, 0);
+    
+}
+
+button:hover{
+    color: rgb(15, 1, 15);
+    background-color: blueviolet;
+    cursor: pointer;
+    border: 2px solid rgba(68, 7, 233, 0.918);
+    transition: 0,5s;
+
+}
+
+.calculator{
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.calcButton{
+    box-shadow:  0 0 10px black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.calcButton>button:nth-child(20){
+    grid-column: 4/3;
+}
+
+.operator{
+    border-radius: 12em;
+    background-color: rgb(252, 251, 247);
+
+}
+
+.number{
+    background-color: rgb(223, 245, 28);
+}
+
+.userinput{
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgb(8, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(250, 253, 251);
+    position: relative;
+    height: 80px;
+    max-width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-size: 25px;
+    
+}
+
+.calcButton >button:nth-child(10){
+    background-color: rgb(241, 237, 14);
+}
+
+.userentry {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+.finalcalc{
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    top: 0;
+    padding: 0;
+    
+}
